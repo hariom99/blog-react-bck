@@ -1,0 +1,23 @@
+.icon{
+    margin-bottom: 45px;
+}
+
+.icons{
+    width: 30px;
+    margin-left: 5px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+
+.clp{
+    color: rgb(147, 172, 164);
+}
+.clap{
+    margin-top: 5px;
+    width: 35px;
+}
