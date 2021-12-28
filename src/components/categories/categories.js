@@ -12,7 +12,7 @@ function Categories(prop) {
     const currentPage = prop.match.params.cat;
 
     useEffect(() => {
-        const url = "http://localhost:8000/api/v1/blogs/"
+        const url = "https://blog-app-pb.herokuapp.com/api/v1/blogs/"
         axios.post(url, {
             currentPage
         }).then((res) => {
