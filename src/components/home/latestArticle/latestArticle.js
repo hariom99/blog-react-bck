@@ -9,7 +9,8 @@ function LatestArticle(props) {
     const [count, setCount] = useState(3);
     useEffect(() => {
         const getData = () => {
-            axios.post("http://localhost:8000/api/v1/home-articles").then((res) => {
+            // axios.post("http://localhost:8000/api/v1/home-articles").then((res) => {
+            axios.post("https://blog-app-pb.herokuapp.com/api/v1/home-articles/").then((res) => {
                 setArt(res.data);
             }).catch((error) => {
                 console.log(error);
