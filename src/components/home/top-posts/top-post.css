@@ -25,7 +25,8 @@
     border-bottom: 4px solid #F39F9F;
 }
 .top-post-img{
-    background-image: url("../../../images/home/top-posts/img1.jpg");
+    /* background-image: url("../../../images/home/top-posts/img1.jpg"); */
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg");
     background-size: 100% 100%;
     width: 70%;
     height: 400px;
@@ -60,6 +61,7 @@
    border-top: 3px solid wheat;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 
 }
 
@@ -78,7 +80,9 @@
 
 
 
-
+.top-post-head-div{
+    cursor: pointer;
+}
 
 
 @media screen and (min-width:360px) and (max-width:700px) {

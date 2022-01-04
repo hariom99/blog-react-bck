@@ -16,6 +16,7 @@ import LatestPost2 from './components/latestPosts/latestPost2';
 import LatestPost3 from './components/latestPosts/latestPost3';
 import Login from './components/login/login';
 import Register from './components/login/register';
+import TopPostsView from './components/top-post-view/topPostView';
 
 // import Cate from './components/categories/cate'
 
@@ -42,6 +43,7 @@ function App() {
         <Route exact path="/latest-3" component={LatestPost3} />
 
         <Route exact path="/articles/:id" component={ViewArticles} />
+        <Route exact path="/top-posts/:id" component={TopPostsView} />
 
 
         <Route exact path="/category/:cat/blog/:path" component={BlogPost} />
