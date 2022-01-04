@@ -15,7 +15,7 @@ export default function TopPosts() {
             console.log(err);
         })
     }, []);
-    // let topPosts = [1, 2, 3, 4];
+
     return (<>
         <div className="top-post-heading" >
             <span>Top </span> Posts
@@ -34,7 +34,6 @@ export default function TopPosts() {
                         <span className="travel-date" > / July 21 2021 </span>
                     </p>
                 </div>
-                {/* // <Link onClick={() => history.push(data)} to={"/top-posts/:" + ind} > */}
                 <div className="top-post-cards" >
                     {topPosts.map((data, ind) => {
                         return <div
@@ -58,7 +57,7 @@ export default function TopPosts() {
 
 
                         </div>
-                        // </Link>
+
                     })}
 
                 </div>
