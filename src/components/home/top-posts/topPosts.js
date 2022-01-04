@@ -7,13 +7,14 @@ export default function TopPosts() {
     const [topPosts, setTopPosts] = useState([]);
     const history = useHistory()
     useEffect(() => {
-        axios.post("https://blog-app-pb.herokuapp.com/api/v1/top-posts/").then((res) => {
+        // axios.post("https://sblog-app-pb.herokuapp.com/api/v1/top-posts/").then((res) => {
+        axios.post("http://localhost:8000/api/v1/top-posts/").then((res) => {
             // console.log(res.data);
-            setTopPosts(res.data)
+            setTopPosts((prev) => res.data)
         }).catch((err) => {
             console.log(err);
         })
-    }, [topPosts]);
+    }, []);
     // let topPosts = [1, 2, 3, 4];
     return (<>
         <div className="top-post-heading" >
